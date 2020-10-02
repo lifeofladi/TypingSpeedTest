@@ -1,0 +1,142 @@
+* {
+	font-size: 16px;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+body {
+  display: grid;
+	grid-template-rows: 1fr 7fr 0.5fr;
+	grid-template-columns: 1fr;
+	height: 100vh;
+	overflow: hidden;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2.0em;
+	font-family: 'IBM Plex Mono', monospace;
+	text-transform: uppercase;
+	/* width: 70%; */
+	/* min-height: 65px; */
+	/* padding: 5px 0 5px 0; */
+	/* margin: 0 auto; */
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.tstx-containr {
+	border: 1px solid #dfe1e5; /* Google style */
+	border-radius: 10px;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	width: 60%;
+}
+.tstx-containr:hover {
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28); /* Google style */
+	border-color: rgba(223,225,229,0); /* Google style */
+	cursor: pointer;
+}
+.tstx-containr p {
+	/* width: 90%; */
+	text-align: justify;
+	font-size: 0.8em;
+	line-height: 1.5;
+	user-select:none; /*diable selection/copying*/
+	/* padding-left: 5%; */
+	/* padding-right: 5%; */
+}
+
+.timer-containr {
+	border: 1px solid #dfe1e5; /* Google style */
+	border-radius: 10px;
+	max-height: 35%;
+	width: 35%;
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+.timer-containr:hover {
+	border-color: rgba(223,225,229,0);
+	cursor: pointer;
+}
+.timer-containr div {
+	padding: 0 5px;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.txtarea-containr {
+	width: 60%;
+	min-height: 30%;
+	border: 1px solid #dfe1e5;
+	border-radius: 10px;
+}
+.txtarea-containr:hover{
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+	/* box-shadow: 0px 1px 6px 0px rgba(41,219,77,0.28); */
+	border-color: rgba(223,225,229,0);
+}
+textarea {
+	border: none;
+	outline: none;
+	resize: none; /* cannot resize box */
+	width: 95%;
+	height: 100%;
+	line-height: 1.5;
+	font-size: 0.8em;
+  box-shadow: none;
+}
+
+button {
+	font-size: 1em;
+	background-color: #f2f2f2; /* Google style */
+	border: 1px solid #dfe1e5;
+	border-radius: 5px;
+}
+button:hover {
+	box-shadow: 0 1px 6px 0; rgba(32,33,36,0.28);
+	border-color: rgba(223,225,229,0);
+	cursor: pointer;
+}
+
+footer {
+	border-top: 1px solid #dfe1e5;
+}
+footer p, footer p a {
+	font-size: 0.8em;
+}
+a {
+	text-decoration: none;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 813px) {
+	h1 {
+		font-size: 2.5em;
+	}
+	.tstx-containr p, textarea, footer p, footer p a {
+		font-size: 1em;
+	}
+	.timer-containr div {
+		font-size: 2em;
+	}
+}
+
+@media screen and (min-width: 1236px) {
+	.tstx-containr, .txtarea-containr {
+		width: 40%;
+	}
+	.timer-containr {
+		width: 20%;
+	}
+}
