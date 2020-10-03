@@ -56,7 +56,7 @@ main {
 	border: 1px solid #dfe1e5; /* Google style */
 	border-radius: 10px;
 	max-height: 35%;
-	width: 35%;
+	min-width: 35%;
 	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
 }
 .timer-containr:hover {
@@ -97,6 +97,8 @@ button {
 	background-color: #f2f2f2; /* Google style */
 	border: 1px solid #dfe1e5;
 	border-radius: 5px;
+	width: 150px;
+	height: 45px;
 }
 button:hover {
 	box-shadow: 0 1px 6px 0; rgba(32,33,36,0.28);
