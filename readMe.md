@@ -1,5 +1,5 @@
 # Typing Speed Test
-A web-application that times your tying speed.
+A web-application that times your typing speed.
 
 ---
 
